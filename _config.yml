@@ -18,3 +18,31 @@ plugins:
 
 # Site settings
 show_excerpts: true
+
+# Add to your existing _config.yml
+markdown: kramdown
+highlighter: rouge
+
+# Additional settings
+show_excerpts: true
+google_analytics: # your GA tag here if you want analytics
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
