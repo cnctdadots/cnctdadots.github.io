@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="blog-container">
+  {% for post in site.posts %}
+  <div class="blog-post">
+    <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    <div class="post-excerpt">
+      {{ post.excerpt }}
+    </div>
+    <a class="read-more" href="{{ post.url | relative_url }}">Read More</a>
+  </div>
+  {% endfor %}
+</div>
+
+<style>
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.blog-post {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+.post-title {
+  font-size: 1.5em;
+}
+.post-meta {
+  font-size: 0.9em;
+  color: #666;
+}
+.post-excerpt {
+  margin: 10px 0;
+}
+.read-more {
+  text-decoration: none;
+  color: #007acc;
+}
+</style>
