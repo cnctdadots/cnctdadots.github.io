@@ -1,0 +1,20 @@
+title: cnctdadots
+author: cnctdadots
+email: your-email@example.com
+description: >- 
+  Welcome to my personal website and blog where I share my thoughts,
+  experiences, and projects.
+
+# Social links
+github_username: cnctdadots
+# twitter_username: your-twitter
+# linkedin_username: your-linkedin
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site settings
+show_excerpts: true
