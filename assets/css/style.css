@@ -1,0 +1,40 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Custom styles
+.site-header {
+    border-top: 5px solid #424242;
+    border-bottom: 1px solid #e8e8e8;
+    min-height: 55.95px;
+    position: relative;
+}
+
+.post-link {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a7ae2;
+    &:hover {
+        text-decoration: none;
+        color: #1756a9;
+    }
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #828282;
+}
+
+.social-links {
+    text-align: center;
+    padding: 20px 0;
+    
+    a {
+        margin: 0 10px;
+        color: #828282;
+        &:hover {
+            color: #2a7ae2;
+        }
+    }
+}
