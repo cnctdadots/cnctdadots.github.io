@@ -1,18 +1,10 @@
 ---
-layout: home
-list_title: Latest Posts
+layout: blog
+title: Welcome
 ---
 
-# Welcome to My Site
+# Hello, I'm cnctdadots! 👋
 
-{{ site.posts.size }} posts and counting!
+Welcome to my personal corner of the internet. Here you'll find my thoughts, projects, and experiences in technology.
 
-{% for post in site.posts %}
-  <article>
-    <h2>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h2>
-    <p>{{ post.date | date: "%B %d, %Y" }}</p>
-    {{ post.excerpt }}
-  </article>
-{% endfor %}
+## Latest Posts
